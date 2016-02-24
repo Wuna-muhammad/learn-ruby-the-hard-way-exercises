@@ -1,26 +1,23 @@
 #coding -*- utf-8 -*-
 
-my_name = 'Bernard Pietraga'
-my_age = 21 # Not even a lie.
-my_height = 72 # inches
-my_weight = 170 # lbs
-my_eyes = 'Blue'
-my_teeth = 'White'
-my_hair = 'Brown'
+types_of_people = 10
+x = "There are #{types_of_people} types of people" # Variable with delared string linking to variable delaring types of people.
+binary = "binary" # Variable with declared string of text the exactly the same as variable name.
+do_not = "don't" # Variable with declared string of text the same as variable name.
+y = "Those who know #{binary} and those who #{do_not}." # Variable 
 
-puts "Lets talk about #{my_name}."
-puts "He's #{my_height} inches tall."
-puts "He's #{my_weight} pounds heavy."
-puts "Actually that's not too heavy."
-puts "He's got #{my_eyes} eyes and #{my_hair} hair."
-puts "His teeth are usually #{my_teeth} depending on the coffee."
+puts x
+puts y
 
-# this line is tricky, try to get it exactly right
-puts "If I add #{my_age}, #{my_height}, and #{my_weight} I get #{my_age + my_height + my_weight}."
+puts "I said #{x}."
+puts "I also said: '#{y}'."
 
+hilarious = false
+joke_evaluation = "Isn't that joke so funny?! #{hilarious}."
 
-#test
-puts
-puts ".downcase test"
-puts "test He's got #{my_eyes.downcase} eyes and #{my_hair.downcase} hair." # test .downcase variable inside string
-puts "test His teeth are usually #{my_teeth.downcase} depending on the coffee." # test .downcase variable inside string
+puts joke_evaluation
+
+w = "This is the left side of..."
+e = "a string with a right side."
+
+puts w + e

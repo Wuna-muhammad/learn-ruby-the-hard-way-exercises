@@ -7,7 +7,7 @@
 puts "Mary had a little lamb."
 
 # Prints string about Mars's lamb fleece color.
-# W ith "Snow" text inside Variable added to string
+# W ith 'Snow' text added to string
 puts "Its fleece was white as #{'snow'}."
 
 # Prints string about Mary
@@ -16,7 +16,7 @@ puts "And everywhere that Mary went."
 # Multiplies dot character.
 puts "." * 10 # What would that do?
 
-# Declaring variavbles with only single values.
+# Declaring variables with only single values.
 end1 = "C"
 end2 = "h"
 end3 = "e"

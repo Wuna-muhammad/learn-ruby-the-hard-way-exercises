@@ -1,0 +1,4 @@
+This is sample text.
+File format is txt.
+Ruby will read from this.
+Bye!

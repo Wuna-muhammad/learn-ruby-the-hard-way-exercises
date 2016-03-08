@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
 # Bernard Pietraga
-# Excercise No. 15 from Learn Ruby The Hard Way
+# Excercise No. 16 from Learn Ruby The Hard Way
 
 # Opens declared file in shell.
 # Prints warning message,

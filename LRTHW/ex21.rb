@@ -49,6 +49,3 @@ puts "Last math formula."
 recreate = divide(multiply((add((multiply(age, iq)), 1)), 3), 3)
 puts "We get #{recreate} from formula."
 puts "That's good."
-
-
-

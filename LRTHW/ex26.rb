@@ -67,10 +67,12 @@ puts "--------------"
 puts poem
 puts "--------------"
 
-
+# Stupid name for variable from exercise text.
 five = 10 - 2 + 3 - 6
+# Prints a string with code executed from variable five.
 puts "This should be five: #{five}"
 
+# Another part of exercise.
 def secret_formula(started)
   jelly_beans = started * 500
   jars = jelly_beans / 1000
@@ -87,6 +89,13 @@ puts "We'd have #{beans} beans, #{jars} jars, and #{crates} crates."
 
 start_point /= 10
 
+# Blank new line.
+puts
+# Prints a string.
+puts "Now lets use module Ex26. Examples below."
+# Blank new line.
+puts
+# Script calling funtions in module Ex26.
 sentence = "All good things come to those who wait."
 words = Ex26.break_words(sentence)
 sorted_words = Ex26.sort_words(words)

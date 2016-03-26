@@ -19,7 +19,7 @@ if cars > people
 elsif cars < people
   # If true. Prints a string.
   puts "We should not takt the cars."
-# The else statment if requrements to pass 2 bootlean contition weren't met.
+# The else statement if requirements to pass 2 bootlean contition weren't met.
 else
   # Prints a string.
   puts "We can't decide."
@@ -47,7 +47,7 @@ end
 if people > trucks
   # If true. Prints a string.
   puts "Alright, let's just take the trucks."
-# If false. Else statment works.
+# If false. Else statement works.
 else
   # Prints a string.
   puts "Fine, let's stay home then."

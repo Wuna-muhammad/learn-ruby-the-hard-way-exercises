@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 10 from Learn Ruby The Hard Way
+# Exercise No. 10 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 # 2 Escape sequences with quotation marks.
 puts "I am 6'2\" tall." # escape double-quote inside string
@@ -32,4 +32,3 @@ puts backslash_cat
 puts fat_cat
 puts slim_cat
 puts slimmer_cat
-

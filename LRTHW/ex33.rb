@@ -1,6 +1,6 @@
 #coding -*- utf-8 -*-
 
-# Excercise No. 33 from Learn Ruby The Hard Way
+# Exercise No. 33 from Learn Ruby The Hard Way
 # Done by Bernard Pietraga.
 
 # Function with while loop.

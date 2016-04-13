@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 18 from Learn Ruby The Hard Way
+# Exercise No. 18 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 # this is one like your scripts with ARGV.
 def print_two(*args)
@@ -28,4 +28,3 @@ print_two("Zed", "Shaw")
 print_two_again("Zed", "Shaw")
 print_one("First!")
 print_none()
-

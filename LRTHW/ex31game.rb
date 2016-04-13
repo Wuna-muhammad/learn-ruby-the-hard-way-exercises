@@ -1,8 +1,8 @@
 #coding -*- utf-8 -*-
 
-# Game form excercise No. 31 from Learn Ruby The Hard Way
+# Game from Exercise No. 31 from Learn Ruby The Hard Way
 # Little bit funny.
-# Bernard Pietraga
+# Done by Bernard Pietraga
 
 # Prints a string.
   puts "You enter a dark room with two doors.  Do you go through door #1 or door #2?"

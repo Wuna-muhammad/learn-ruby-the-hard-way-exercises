@@ -1,6 +1,6 @@
 #coding -*- utf-8 -*-
 
-# Excercise No. 35 from Learn Ruby The Hard Way.
+# Exercise No. 35 from Learn Ruby The Hard Way.
 # Done by Bernard Pietraga.
 
 def gold_room

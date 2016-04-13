@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 12 from Learn Ruby The Hard Way
+# Exercise No. 12 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 print "Give me a number: "
 number = gets.chomp.to_i
@@ -16,7 +16,7 @@ number = another.to_i
 smaller = number / 100
 puts "A smaller number is #{smaller}."
 
-# Script for giving back 10% of putted dolars
+# Script for giving back 10% of putted dolars.
 print "Give me a number of dollars: "
 dollars = gets.chomp.to_f
 your_dollars_divided = dollars / 10

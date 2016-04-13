@@ -1,5 +1,8 @@
 #coding -*- utf-8 -*-
 
+# Exercise No. 4 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
+
 cars = 100
 space_in_a_car = 4.0
 drivers = 30

@@ -1,5 +1,8 @@
 #coding -*- utf-8 -*-
 
+# Exercise No. 5 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
+
 my_name = 'Bernard Pietraga'
 my_age = 21 # Not even a lie.
 my_height = 72 # inches

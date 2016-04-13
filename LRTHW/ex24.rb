@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 24 from Learn Ruby The Hard Way
+# Exercise No. 24 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 
 puts "Let's practice everything."

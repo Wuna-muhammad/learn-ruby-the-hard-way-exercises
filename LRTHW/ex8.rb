@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 8 from Learn Ruby The Hard Way
+# Exercise No. 8 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 formatter = "%{first} %{second} %{third} %{fourth}"
 

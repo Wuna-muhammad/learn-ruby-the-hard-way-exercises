@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 14 from Learn Ruby The Hard Way
+# Exercise No. 14 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 user_name = ARGV.first # Gets the first argument
 prompt = "Type below."

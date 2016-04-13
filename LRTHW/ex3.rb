@@ -1,14 +1,17 @@
 #coding -*- utf-8 -*-
 
+# Exercise No. 3 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
+
 puts "Now i'll count my chickens."
 
 puts "Hens #{25.0 + 30.0 / 6.0}" # Shows counted hens.
 puts "Roosters #{100.0 - 25.0 * 3.0 % 4.0}" # Shows counted Roosters.
 
-puts "Now I'll count my eggs:" 
+puts "Now I'll count my eggs:"
 puts 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6 # Result of egg math.
 
-puts "I it true that 3.0 + 2.0 < 5.0 - 7.0?" 
+puts "I it true that 3.0 + 2.0 < 5.0 - 7.0?"
 
 puts 3 + 2 < 5 - 7 # Checks the calculation and shows the answer.
 

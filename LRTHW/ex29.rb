@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Excercise No. 29 from Learn Ruby The Hard Way
-# Bernard Pietraga
+# Exercise No. 29 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 people = 20
 cats = 30

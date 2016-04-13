@@ -1,6 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Excercise No. 25 from Learn Ruby The Hard Way
+# Exercise No. 25 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 # Module can be run from irb.
 # Below text to be pasted into irb to run the script.

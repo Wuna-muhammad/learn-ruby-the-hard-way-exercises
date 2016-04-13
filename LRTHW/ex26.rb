@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Resolved excercise No. 26 from Learn Ruby The Hard Way
-# Bernard Pietraga
+# Resolved exercise No. 26 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 module Ex26
 

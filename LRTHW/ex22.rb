@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 22 from Learn Ruby The Hard Way
+# Exercise No. 22 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 # Do not run this file. It is just for syntax learning purposes.
 
 # characters.

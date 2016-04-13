@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Excercise No. 32 from Learn Ruby The Hard Way
-# Bernard Pietraga
+# Exercise No. 32 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 the_count = [1, 2, 3, 4, 5]
 fruits = ['apples', 'oranges', 'pears', 'apricots']

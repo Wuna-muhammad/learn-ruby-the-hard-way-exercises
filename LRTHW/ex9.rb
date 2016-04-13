@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 9 from Learn Ruby The Hard Way
+# Exercise No. 9 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 days = "Mon Tue Wed Thu Fri Sat Sun"
 months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"

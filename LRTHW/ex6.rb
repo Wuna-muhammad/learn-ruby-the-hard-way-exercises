@@ -1,10 +1,13 @@
 #coding -*- utf-8 -*-
 
+# Exercise No. 6 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
+
 types_of_people = 10
 x = "There are #{types_of_people} types of people" # Variable with delared string linking to variable delaring types of people.
 binary = "binary" # Variable with declared string of text the exactly the same as variable name.
 do_not = "don't" # Variable with declared string of text the same as variable name.
-y = "Those who know #{binary} and those who #{do_not}." # Variable 
+y = "Those who know #{binary} and those who #{do_not}." # Variable
 
 puts x
 puts y

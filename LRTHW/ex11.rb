@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 11 from Learn Ruby The Hard Way
+# Exercise No. 11 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 print "How old are you? "
 age = gets.chomp

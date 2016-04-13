@@ -1,9 +1,8 @@
 #coding -*- utf-8 -*-
 
-# Excercise No. 36 from Learn Ruby The Hard Way.
+# Exercise No. 36 from Learn Ruby The Hard Way.
 # Done by Bernard Pietraga.
 
-# HEREDOC about decisions you can make in game function.
 # The game is about one day fictional metro hero.
 
 def game
@@ -87,7 +86,7 @@ def backpack_trail
   end
 end
 
-# Attack kinfe game path.
+# Attack knife game path.
 def attack_knife
   puts "You get up and quicky grab the man."
   puts "Maybe it wasn't do good idea."
@@ -119,7 +118,7 @@ end
 # Die funtion. ends game.
 def die(why)
   puts why, "Game Over"
-  # Closes ruby script and exits to shell/whatever.
+  # Closes ruby script and exits to shell.
   exit(0)
 end
 

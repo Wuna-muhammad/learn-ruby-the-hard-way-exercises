@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Excercise No. 30 from Learn Ruby The Hard Way
-# Bernard Pietraga
+# Exercise No. 30 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 # Declares people variable.
 people = 30

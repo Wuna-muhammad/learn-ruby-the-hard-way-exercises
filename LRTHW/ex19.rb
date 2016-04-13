@@ -1,7 +1,7 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 19 from Learn Ruby The Hard Way
+# Exercise No. 19 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 # Defines function called cheese_and_crackers.
 # Function have 2 variables which accept arguments.
@@ -22,7 +22,7 @@ end
 # Prints string.
 puts "We can just give the function numbers directly:"
 # Declares arguments for cheese_and_crackers function and calls function.
-cheese_and_crackers(20, 30) 
+cheese_and_crackers(20, 30)
 
 # Prints string.
 puts "OR, we can just use variables from our script:"
@@ -37,7 +37,7 @@ cheese_and_crackers(amount_of_cheese, amount_of_crackers)
 
 # Prints a string.
 puts "We can even do math inside too:"
-# Calls function cheese_and_crackers and as arguments uses math addition. 
+# Calls function cheese_and_crackers and as arguments uses math addition.
 cheese_and_crackers(10 + 20, 5 + 6)
 
 # Prints string.
@@ -116,10 +116,3 @@ pizza_dough("Pizza".length * 5, "Cool".length * 2, "Tasty".length * 3, "Mhm".len
 
 puts "\n"
 puts "Cool"
-
-
-
-
-
-
-

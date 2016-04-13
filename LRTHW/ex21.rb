@@ -1,3 +1,8 @@
+#coding -*- utf-8 -*-
+
+# Exercise No. 21 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
+
 def add(a, b)
   puts "Adding #{a} + #{b}"
   return a + b

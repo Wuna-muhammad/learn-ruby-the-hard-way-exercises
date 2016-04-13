@@ -1,13 +1,13 @@
 #coding -*- utf-8 -*-
 
-# Bernard Pietraga
-# Excercise No. 7 from Learn Ruby The Hard Way
+# Exercise No. 7 from Learn Ruby The Hard Way
+# Done by Bernard Pietraga.
 
 # Prints string about Mary
 puts "Mary had a little lamb."
 
 # Prints string about Mars's lamb fleece color.
-# W ith 'Snow' text added to string
+# With 'Snow' text added to string
 puts "Its fleece was white as #{'snow'}."
 
 # Prints string about Mary

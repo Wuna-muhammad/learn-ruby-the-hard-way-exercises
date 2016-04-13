@@ -1,6 +1,6 @@
 #coding -*- utf-8 -*-
 
-# Excercise No. 34 from Learn Ruby The Hard Way.
+# Exercise No. 34 from Learn Ruby The Hard Way.
 # Done by Bernard Pietraga.
 
 # Animals array.
@@ -26,7 +26,7 @@ puts animals[5]
 def car_types(ordinal)
   # Array with car types.
   cars = ['sedan', 'kombi', 'SUV', 'hatchback', 'sports car', 'convertible', 'microcar']
-  # If statement to check if typed number is in Array argument range.
+  # If statement checks if typed number is in Array argument range.
   if ordinal >= 1 && ordinal <= cars.length
     # If true prints a string.
     puts "The car type is %s and is at #{ordinal - 1 }." % cars[ordinal - 1]

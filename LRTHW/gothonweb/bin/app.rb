@@ -2,7 +2,7 @@ require 'sinatra'
 
 set :port, 8080
 set :static, true
-set :public_folder, "static"
+set :public_folder, "public"
 set :views, "views"
 
 get '/' do
@@ -10,8 +10,14 @@ get '/' do
 end
 
 get '/hello/' do
+  erb :hello_form
+end
+
+post '/hello/' do
   greeting = params[:greeting] || "Hi there"
-  erb :index, :locals => {'greeting' => greeting}
+  name = params[:name]  || "Nobody"
+
+  erb :index, :locals => {'greeting' => greeting, 'name' => name}
 end
 
 # Redirect url to html file.

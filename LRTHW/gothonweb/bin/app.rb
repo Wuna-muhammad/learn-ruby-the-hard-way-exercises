@@ -14,14 +14,14 @@ get '/hello/' do
   erb :index, :locals => {'greeting' => greeting}
 end
 
-# Redirects url to html file.
+# Redirect url to html file.
 get '/howdy' do
   redirect "./howdy.html"
 end
 
-# Dynamilcy generates content.
+# Dynamicly generates content.
 # The friend is parameter passed to sinatra.
-# Framework generates uniqe page for every argument.
+# Framework generates unique page for every argument.
 # Ie. http://localhost:8080/hi/Bernard
 get '/hi/:friend' do
   return "Hi #{params['friend']}, you are sinatra friend."

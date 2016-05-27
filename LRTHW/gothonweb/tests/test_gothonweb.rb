@@ -17,7 +17,7 @@ class TestGOTHONWEB < Test::Unit::TestCase
   def test_hello_form
     get '/hello/'
     assert last_response.ok?
-    assert last_response.body.include?('A greeting')
+    assert last_response.body.include?('A Greeting')
   end
 
   def test_hello_form_post

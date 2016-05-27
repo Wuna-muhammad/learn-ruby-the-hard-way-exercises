@@ -120,7 +120,6 @@ frank = Employee.new("Frank", 120000)
 ## frank has-a pet rover
 frank.pet = rover
 
-
 ## flipper is-a Fish
 flipper = Fish.new()
 

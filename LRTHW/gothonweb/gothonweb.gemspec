@@ -3,17 +3,17 @@ lib = File.expand_path('../lib', _FILE_)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = "NAME"
+  spec.name          = "GOTHONWEB"
   spec.version       = '1.0'
-  spec.authors       = ["Your Name here"]
-  spec.email         = ["youremail@yourdomain.com"]
-  spec.summary       = %q{Short summary of your project.}
-  spec.description   = %q{Longer description your of project.}
-  spec.homepage      = "http://domainforproject.com/"
+  spec.authors       = ["NA"]
+  spec.email         = ["NA"]
+  spec.summary       = %q{Exercise 49, 50, 51 from Learn Ruby The Hard Way.}
+  spec.description   = %q{Webpage on sinatra framework.}
+  spec.homepage      = "NA"
   spec.licence       = "MIT"
 
-  spec.files         = ['lib/NAME.rb']
-  spec.executables   = ['bin/NAME']
-  spec.test_files    = ['test/test_NAME.rb']
+  spec.files         = ['lib/gothonweb.rb']
+  spec.executables   = ['bin/app.rb']
+  spec.test_files    = ['test/test_gothonweb.rb']
   spec.require_paths = ["lib"]
 end

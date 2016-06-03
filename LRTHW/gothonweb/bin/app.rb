@@ -1,4 +1,5 @@
 require 'sinatra'
+require './lib/gothonweb/map.rb'
 
 set :port, 8080
 set :static, true
@@ -9,19 +10,37 @@ enable :sessions
 # Makes signed cookie.
 set :session_secret, 'super duper secret'
 
+# Game
 get '/' do
-  return 'Hello world'
+    session[:room] = 'START'
+    redirect to('/game')
 end
 
-get '/hello/' do
-  erb :hello_form
+get '/game' do
+  room = Map::load_room(session)
+
+  if room
+    erb :show_room, :locals => {:room => room}
+  else
+    erb :you_died
+  end
 end
 
-post '/hello/' do
-  greeting = params[:greeting] || "Hi there"
-  name = params[:name]  || "Nobody"
+post '/game' do
+  room = Map::load_room(session)
+  action = params[:action]
 
-  erb :index, :locals => {'greeting' => greeting, 'name' => name}
+  if room
+    next_room = room.go(action) || room.go("*")
+
+    if next_room
+      Map::save_room(session, next_room)
+    end
+
+    redirect to('/game')
+  else
+    erb :you_died
+  end
 end
 
 # Redirect url to html file.
@@ -37,7 +56,23 @@ get '/hi/:friend' do
   return "Hi #{params['friend']}, you are sinatra friend."
 end
 
-# Photo upload page.
+## Authentication.
+# code goes here.
+
+# Redirect url to html file.
+get '/howdy' do
+  redirect "./howdy.html"
+end
+
+# Dynamically generates content.
+# The friend is parameter passed to sinatra.
+# Framework generates unique page for every argument.
+# Ie. http://localhost:8080/hi/Bernard
+get '/hi/:friend' do
+  return "Hi #{params['friend']}, you are sinatra friend."
+end
+
+## Photo upload page.
 get '/photo/' do
   pictures = load_pictures
   # calls erb code files.

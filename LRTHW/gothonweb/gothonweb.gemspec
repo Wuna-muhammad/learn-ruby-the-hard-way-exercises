@@ -7,8 +7,9 @@ Gem::Specification.new do |spec|
   spec.version       = '1.0'
   spec.authors       = ["NA"]
   spec.email         = ["NA"]
-  spec.summary       = %q{Exercise 49, 50, 51 from Learn Ruby The Hard Way.}
-  spec.description   = %q{Webpage on sinatra framework.}
+  spec.summary       = %q{Exercise 49, 50, 51, 52 from Learn Ruby The Hard Way.}
+  spec.description   = %q{Exercise 49, 50, 51, 52 from Learn Ruby The Hard Way
+                          by Zed Shaw. Webpage on sinatra framework.}
   spec.homepage      = "NA"
   spec.licence       = "MIT"
 

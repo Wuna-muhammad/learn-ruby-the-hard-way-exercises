@@ -1,9 +1,12 @@
+<%= display_error %>
 <h1>This will be login page for Gothons From Planet Percivial</h1>
 <p>Here you login into the game.</p>
 <div>
-<form action="/login" method="post">
-    <p><label for="username" class="username">Username</label><input id="username" maxlength="100" name="username" size="25" type="text"></p>
-    <p><label for="password" class="password">Password</label><input maxlength="25" name="password" size="25" type="password"></p>
-    <p><input type="submit" value="Log in the Game"></p>
-</form>
+    <form action="/login" method="post">
+      User:<br>
+      <input type="text" name="user[name]"><br>
+      Password:<br>
+      <input type="password" name="user[password]"><br>
+      <input type="submit" value="Login into the game.">
+    </form>
 </div>

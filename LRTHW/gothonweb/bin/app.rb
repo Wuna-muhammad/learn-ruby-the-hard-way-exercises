@@ -1,6 +1,17 @@
-require 'sinatra'
-require './lib/gothonweb/map.rb'
+# The main app file form gothonweb game.
 
+# Reuired gems for app to work.
+require 'sinatra'
+require 'active_record'
+require 'pg'
+require './lib/gothonweb/map.rb'
+require './lib/auth.rb'
+require './lib/error_handling.rb'
+require './lib/create_users.rb'
+require './lib/user.rb'
+require './config/database.rb'
+
+# sinatra configuration.
 set :port, 8080
 set :static, true
 set :public_folder, "public"
@@ -10,10 +21,10 @@ enable :sessions
 # Makes signed cookie.
 set :session_secret, 'super duper secret'
 
-# Game
+## Game code.
 get '/' do
-    session[:room] = 'START'
-    redirect to('/game')
+  session[:room] = 'START'
+  redirect to('/game')
 end
 
 get '/game' do
@@ -43,22 +54,42 @@ post '/game' do
   end
 end
 
-# Redirect url to html file.
-get '/howdy' do
-  redirect "./howdy.html"
-end
-
-# Dynamicly generates content.
-# The friend is parameter passed to sinatra.
-# Framework generates unique page for every argument.
-# Ie. http://localhost:8080/hi/Bernard
-get '/hi/:friend' do
-  return "Hi #{params['friend']}, you are sinatra friend."
-end
-
 ## Authentication.
-# code goes here.
+# signup form
+get '/signup' do
+  erb :signup_form
+end
 
+post '/signup' do
+  user = User.new(params[:user])
+  if user.save
+    session[:user_id] = user_id
+    redirect('/game/#[game.id]')
+  else
+    session[:error] = user.error.messages
+    redirect('/signup')
+  end
+end
+# login form
+
+get '/login' do
+  erb :login_form
+end
+
+post '/login' do
+  user = User.find_by(name: params[:user][:name]).try(:authenticate,
+                                                      params[:user][:password])
+  if user
+    session[:user_id] = user.id
+    redirect('/')
+  else
+    set_error("Username or password is incorrect or doesn't exist.")
+    redirect('/login')
+  end
+end
+
+
+## Misc pages, from book exercises not connected with game.
 # Redirect url to html file.
 get '/howdy' do
   redirect "./howdy.html"

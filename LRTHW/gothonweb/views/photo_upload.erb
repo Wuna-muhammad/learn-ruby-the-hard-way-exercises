@@ -3,15 +3,16 @@
 <p>It can be in every format you want, as long as it is in jpeg, png or gif format.</p>
 
 <div class="photoupload">
-  <form action="/photo/" method="POST" enctype="multipart/form-data">
-    <input type="file" name="myfile">
-    <input type="submit" value="upload">
-  </form>
+    <form action="/photo/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="myfile">
+        <input type="submit" value="upload">
+    </form>
 </div>
 
 <h2>The photos you uploaded:</h2>
-  <div class="photoshow">
+
+<div class="photoshow">
     <% pictures.each do |pict| %>
-      <img src="../<%= pict.sub('public/', '') %>" />
+        <img src="../<%= pict.sub('public/', '') %>" />
     <% end %>
-  </div>
+</div>

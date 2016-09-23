@@ -2,14 +2,13 @@
 
 # Reuired gems for app to work.
 require 'sinatra'
-require 'active_record'
-require 'pg'
 require './lib/gothonweb/map.rb'
-require './lib/auth.rb'
 require './lib/error_handling.rb'
-require './lib/create_users.rb'
-require './lib/user.rb'
-require './config/database.rb'
+require './lib/models/user.rb'
+
+require "sinatra/activerecord"
+
+set :database, {adapter: "sqlite3", database: "db/development.sqlite3"}
 
 # sinatra configuration.
 set :port, 8080
@@ -52,6 +51,16 @@ post '/game' do
   else
     erb :you_died
   end
+end
+
+get '/users' do
+  @users = User.all
+  erb :index
+end
+
+get '/users/:id' do
+  @user = User.find(params[:id])
+  erb :show
 end
 
 ## Authentication.

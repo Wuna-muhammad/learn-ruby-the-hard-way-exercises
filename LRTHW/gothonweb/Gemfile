@@ -1,0 +1,21 @@
+# This is local gemfile needed for bundle installer.
+# run $ bundle install to install all needed packages.
+source 'https://rubygems.org'
+
+gem 'sinatra', '1.4.7'
+gem 'sinatra-flash', '0.3.0', require: 'sinatra/flash'
+gem 'bcrypt'
+
+gem 'dm-core', '1.2.1'
+gem 'dm-sqlite-adapter', '1.2.0'
+gem 'dm-migrations', '1.2.0'
+gem 'dm-serializer', '1.2.2'
+gem 'dm-timestamps', '1.2.0'
+gem 'dm-transactions', '1.2.0'
+gem 'dm-types', '1.2.2'
+gem 'dm-validations', '1.2.0'
+gem "sinatra-activerecord"
+gem "sqlite3"
+gem "rake"
+gem 'warden', '1.2.6'
+gem 'shotgun', '0.9.1'

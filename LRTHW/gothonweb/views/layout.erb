@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <link rel="stylesheet" type="text/css" href="/styles.css">
     <title>Gothons From Planet Percial #25</title>
-</head>
-
-<body>
-<header>
-    <div id="login-toolbar">
-        <% if current_user %>
-            <a href="/logout">Logout</a>
-        <% else %>
-            <a href="/login">Login</a> | <a href="/signup">Signup</a>
-        <% end %>
-    </div>
-</header>
-
-  <%= yield %>
-</body>
+  </head>
+  <body>
+    <header>
+    </header>
+    <%= yield %>
+  </body>
 </html>
